@@ -1,0 +1,7 @@
+.DS_Store
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+analysis/.cache/
+analysis/.mplconfig/
+analysis/figures/test.png
+
