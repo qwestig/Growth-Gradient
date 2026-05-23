@@ -1,0 +1,17 @@
+model,alpha,blend,mape
+transformer,1.0,,3.3058713836767213
+transformer,0.9,,3.3252926861789733
+transformer,0.8,,3.368978377935963
+gru_transformer_blend,0.7,transformer_weight_0.5,3.4229301689417935
+gru_transformer_blend,0.7,transformer_weight_0.4,3.424785376052894
+transformer,0.7,,3.426814469760268
+gru_transformer_blend,0.7,transformer_weight_0.3,3.4276878766654475
+gru_transformer_blend,0.7,transformer_weight_0.2,3.431490483318596
+gru_transformer_blend,0.7,transformer_weight_0.1,3.4361703262801866
+gru_reference,0.7,,3.4417188775262058
+catboost_targeted_reference,0.7,,3.471942824216448
+transformer,0.6,,3.497561977247575
+transformer,0.5,,3.5794781506513123
+transformer,0.4,,3.671537161372624
+transformer,0.3,,3.772769162320797
+transformer,0.2,,3.88268449363594

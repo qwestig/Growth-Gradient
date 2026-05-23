@@ -1,0 +1,85 @@
+{
+  "seq_len": 14,
+  "epochs": 80,
+  "best_gru": {
+    "model": "gru",
+    "alpha": 0.7,
+    "blend_weight_gru": 1.0,
+    "mape": 3.441718877580844
+  },
+  "comparison": [
+    {
+      "model": "gru",
+      "alpha": 0.7,
+      "blend_weight_gru": 1.0,
+      "mape": 3.441718877580844
+    },
+    {
+      "model": "catboost_gru_blend",
+      "alpha": 0.7,
+      "blend_weight_gru": 0.5,
+      "mape": 3.444639108386144
+    },
+    {
+      "model": "catboost_gru_blend",
+      "alpha": 0.7,
+      "blend_weight_gru": 0.4,
+      "mape": 3.448107778752342
+    },
+    {
+      "model": "catboost_gru_blend",
+      "alpha": 0.7,
+      "blend_weight_gru": 0.3,
+      "mape": 3.4526202474835497
+    },
+    {
+      "model": "catboost_gru_blend",
+      "alpha": 0.7,
+      "blend_weight_gru": 0.2,
+      "mape": 3.4580688788509493
+    },
+    {
+      "model": "catboost_gru_blend",
+      "alpha": 0.7,
+      "blend_weight_gru": 0.1,
+      "mape": 3.464496523957191
+    },
+    {
+      "model": "catboost_targeted_reference",
+      "alpha": 0.7,
+      "blend_weight_gru": 0.0,
+      "mape": 3.471942824216448
+    },
+    {
+      "model": "gru",
+      "alpha": 0.6,
+      "blend_weight_gru": 1.0,
+      "mape": 3.509379531349202
+    },
+    {
+      "model": "gru",
+      "alpha": 0.5,
+      "blend_weight_gru": 1.0,
+      "mape": 3.5888234035904487
+    },
+    {
+      "model": "gru",
+      "alpha": 0.4,
+      "blend_weight_gru": 1.0,
+      "mape": 3.6784494059089234
+    },
+    {
+      "model": "gru",
+      "alpha": 0.3,
+      "blend_weight_gru": 1.0,
+      "mape": 3.7779479573016
+    },
+    {
+      "model": "gru",
+      "alpha": 0.2,
+      "blend_weight_gru": 1.0,
+      "mape": 3.886300788392838
+    }
+  ],
+  "submission": "/Users/levonkrtyan/Library/Mobile Documents/com~apple~CloudDocs/Growth Gradient/submissions/test_gru_alpha070.csv"
+}

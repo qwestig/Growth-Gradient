@@ -1,0 +1,226 @@
+{
+  "validation_factor": 1.1294587539218028,
+  "final_factor": 1.119179025171653,
+  "march_2024_rows": 18657,
+  "cv_top": [
+    {
+      "alpha": 0.8,
+      "clip": "no_clip",
+      "mape_ml": 3.4612249978832508,
+      "mape_base": 4.127973262779244,
+      "mean_abs_correction_pct": 1.7063536709015696,
+      "p99_correction": 1.1000475606542797,
+      "max_correction": 2.0083367762508635,
+      "gain_vs_base": 0.6667482648959928
+    },
+    {
+      "alpha": 0.7,
+      "clip": "no_clip",
+      "mape_ml": 3.514219978244552,
+      "mape_base": 4.127973262779244,
+      "mean_abs_correction_pct": 1.4819359186641188,
+      "p99_correction": 1.086822941545632,
+      "max_correction": 1.840695596753626,
+      "gain_vs_base": 0.6137532845346918
+    },
+    {
+      "alpha": 0.6,
+      "clip": "no_clip",
+      "mape_ml": 3.5773384996022024,
+      "mape_base": 4.127973262779244,
+      "mean_abs_correction_pct": 1.2611433942936503,
+      "p99_correction": 1.0738115810966768,
+      "max_correction": 1.687047869647221,
+      "gain_vs_base": 0.5506347631770412
+    },
+    {
+      "alpha": 0.8,
+      "clip": "clip_0.10",
+      "mape_ml": 3.5960169951969285,
+      "mape_base": 4.127973262779244,
+      "mean_abs_correction_pct": 1.3583923168171013,
+      "p99_correction": 1.0710022692573677,
+      "max_correction": 1.1000000000000003,
+      "gain_vs_base": 0.5319562675823151
+    },
+    {
+      "alpha": 0.8,
+      "clip": "clip_0.05",
+      "mape_ml": 3.6132014732365088,
+      "mape_base": 4.127973262779244,
+      "mean_abs_correction_pct": 1.3106193072820194,
+      "p99_correction": 1.0484742018912523,
+      "max_correction": 1.05,
+      "gain_vs_base": 0.5147717895427348
+    },
+    {
+      "alpha": 0.7,
+      "clip": "clip_0.10",
+      "mape_ml": 3.626995756404834,
+      "mape_base": 4.127973262779244,
+      "mean_abs_correction_pct": 1.200022217282859,
+      "p99_correction": 1.067039029385209,
+      "max_correction": 1.1000000000000003,
+      "gain_vs_base": 0.5009775063744097
+    },
+    {
+      "alpha": 0.7,
+      "clip": "clip_0.05",
+      "mape_ml": 3.643813236369989,
+      "mape_base": 4.127973262779244,
+      "mean_abs_correction_pct": 1.1549741102944158,
+      "p99_correction": 1.0461189330543323,
+      "max_correction": 1.05,
+      "gain_vs_base": 0.4841600264092545
+    },
+    {
+      "alpha": 0.5,
+      "clip": "no_clip",
+      "mape_ml": 3.6497779543427873,
+      "mape_base": 4.127973262779244,
+      "mean_abs_correction_pct": 1.0437339921254034,
+      "p99_correction": 1.0610094149917022,
+      "max_correction": 1.5462255244706697,
+      "gain_vs_base": 0.4781953084364563
+    },
+    {
+      "alpha": 0.6,
+      "clip": "clip_0.10",
+      "mape_ml": 3.6681059982979916,
+      "mape_base": 4.127973262779244,
+      "mean_abs_correction_pct": 1.0411188420328343,
+      "p99_correction": 1.06255447336804,
+      "max_correction": 1.1000000000000003,
+      "gain_vs_base": 0.45986726448125204
+    },
+    {
+      "alpha": 0.8,
+      "clip": "clip_0.02",
+      "mape_ml": 3.6810844578271427,
+      "mape_base": 4.127973262779244,
+      "mean_abs_correction_pct": 1.1401806892263153,
+      "p99_correction": 1.02,
+      "max_correction": 1.02,
+      "gain_vs_base": 0.4468888049521009
+    },
+    {
+      "alpha": 0.6,
+      "clip": "clip_0.05",
+      "mape_ml": 3.6851086458252524,
+      "mape_base": 4.127973262779244,
+      "mean_abs_correction_pct": 0.9977695402918615,
+      "p99_correction": 1.0431012518194027,
+      "max_correction": 1.05,
+      "gain_vs_base": 0.44286461695399115
+    },
+    {
+      "alpha": 0.7,
+      "clip": "clip_0.02",
+      "mape_ml": 3.6951304449763454,
+      "mape_base": 4.127973262779244,
+      "mean_abs_correction_pct": 1.0408068041125587,
+      "p99_correction": 1.02,
+      "max_correction": 1.02,
+      "gain_vs_base": 0.43284281780289824
+    }
+  ],
+  "candidate_summary": [
+    {
+      "candidate": "candidate_cb_alpha050_noclip",
+      "alpha": 0.5,
+      "clip": "no_clip",
+      "rows": 18657,
+      "mean_abs_correction_pct": 1.0012644201133134,
+      "p99_correction": 1.073866140050827,
+      "max_correction": 1.4953117283643063
+    },
+    {
+      "candidate": "candidate_cb_alpha060_noclip",
+      "alpha": 0.6,
+      "clip": "no_clip",
+      "rows": 18657,
+      "mean_abs_correction_pct": 1.2122158355397021,
+      "p99_correction": 1.089281645685064,
+      "max_correction": 1.6206084074203135
+    },
+    {
+      "candidate": "candidate_cb_alpha050_clip010",
+      "alpha": 0.5,
+      "clip": 0.1,
+      "rows": 18657,
+      "mean_abs_correction_pct": 0.8133450165640455,
+      "p99_correction": 1.073866140050827,
+      "max_correction": 1.1000000000000003
+    }
+  ],
+  "recommended_submission": "/Users/levonkrtyan/Library/Mobile Documents/com~apple~CloudDocs/Growth Gradient/submissions/test_next.csv",
+  "recommended_candidate": "candidate_cb_alpha060_noclip",
+  "recommended_basis": {
+    "alpha": 0.6,
+    "clip": "no_clip",
+    "oof_mape": 3.5773384996022024,
+    "oof_gain_vs_base": 0.5506347631770412
+  },
+  "feature_importance_top": [
+    {
+      "feature": "momentum_raw",
+      "importance": 28.710041987378048
+    },
+    {
+      "feature": "volatility_rel3",
+      "importance": 18.78737087117005
+    },
+    {
+      "feature": "volatility_rel6",
+      "importance": 9.856618406816231
+    },
+    {
+      "feature": "diff1",
+      "importance": 8.61556795352904
+    },
+    {
+      "feature": "lag1_to_lag12",
+      "importance": 4.717088665400904
+    },
+    {
+      "feature": "momentum_clip",
+      "importance": 4.713984454956069
+    },
+    {
+      "feature": "Количество домохозяйств",
+      "importance": 2.4820551418540724
+    },
+    {
+      "feature": "accel1",
+      "importance": 2.1614383500761774
+    },
+    {
+      "feature": "Продуктовые магазины (500 м)",
+      "importance": 1.8846543179533732
+    },
+    {
+      "feature": "momentum_corr",
+      "importance": 1.760100542740606
+    },
+    {
+      "feature": "store_mar_feb_ratio",
+      "importance": 1.4731338785382437
+    },
+    {
+      "feature": "lag1_to_lag13",
+      "importance": 1.4194659189131755
+    },
+    {
+      "feature": "Регион",
+      "importance": 1.320279049028056
+    },
+    {
+      "feature": "Населенный пункт",
+      "importance": 1.3102437325098522
+    },
+    {
+      "feature": "roll3_std",
+      "importance": 1.1458109625862944
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+alpha,file,rows,missing,nonpositive,mean_abs_corr_pct,p99_corr,max_corr,min_corr
+0.7,/Users/levonkrtyan/Library/Mobile Documents/com~apple~CloudDocs/Growth Gradient/submissions/test_gru_ensemble_alpha070.csv,18657,0,0,1.5520784219387178,1.08976821899414,2.5947446823120117,0.7334164977073669
+0.75,/Users/levonkrtyan/Library/Mobile Documents/com~apple~CloudDocs/Growth Gradient/submissions/test_gru_ensemble_alpha075.csv,18657,0,0,1.6734090803162411,1.0964803791046136,2.7776198387145996,0.7173529267311096

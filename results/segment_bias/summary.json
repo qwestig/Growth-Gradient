@@ -1,0 +1,105 @@
+{
+  "base_gru_mape": 3.4417188775262058,
+  "best": {
+    "segment": "momentum_raw_bin",
+    "groups": 5,
+    "shrink_k": 500,
+    "beta": 0.75,
+    "clip": 0.02,
+    "mape": 3.411312546627666,
+    "gain_vs_gru": 0.030406330898539835
+  },
+  "submission": "/Users/levonkrtyan/Library/Mobile Documents/com~apple~CloudDocs/Growth Gradient/submissions/test_gru_segment_momentum_k500_b075_c020.csv",
+  "top10": [
+    {
+      "segment": "momentum_raw_bin",
+      "groups": 5,
+      "shrink_k": 500,
+      "beta": 0.75,
+      "clip": 0.02,
+      "mape": 3.411312546627666,
+      "gain_vs_gru": 0.030406330898539835
+    },
+    {
+      "segment": "momentum_raw_bin",
+      "groups": 5,
+      "shrink_k": 500,
+      "beta": 0.75,
+      "clip": 0.03,
+      "mape": 3.411312546627666,
+      "gain_vs_gru": 0.030406330898539835
+    },
+    {
+      "segment": "momentum_raw_bin",
+      "groups": 5,
+      "shrink_k": 500,
+      "beta": 0.75,
+      "clip": 0.015,
+      "mape": 3.411312546627666,
+      "gain_vs_gru": 0.030406330898539835
+    },
+    {
+      "segment": "momentum_raw_bin",
+      "groups": 5,
+      "shrink_k": 500,
+      "beta": 0.75,
+      "clip": 0.01,
+      "mape": 3.4113201495827044,
+      "gain_vs_gru": 0.030398727943501402
+    },
+    {
+      "segment": "momentum_raw_bin",
+      "groups": 5,
+      "shrink_k": 250,
+      "beta": 0.75,
+      "clip": 0.03,
+      "mape": 3.411333552972102,
+      "gain_vs_gru": 0.03038532455410392
+    },
+    {
+      "segment": "momentum_raw_bin",
+      "groups": 5,
+      "shrink_k": 250,
+      "beta": 0.75,
+      "clip": 0.02,
+      "mape": 3.411333552972102,
+      "gain_vs_gru": 0.03038532455410392
+    },
+    {
+      "segment": "momentum_raw_bin",
+      "groups": 5,
+      "shrink_k": 250,
+      "beta": 0.75,
+      "clip": 0.015,
+      "mape": 3.411333552972102,
+      "gain_vs_gru": 0.03038532455410392
+    },
+    {
+      "segment": "momentum_raw_bin",
+      "groups": 5,
+      "shrink_k": 250,
+      "beta": 0.75,
+      "clip": 0.01,
+      "mape": 3.4114905667356825,
+      "gain_vs_gru": 0.03022831079052324
+    },
+    {
+      "segment": "momentum_raw_bin",
+      "groups": 5,
+      "shrink_k": 100,
+      "beta": 0.75,
+      "clip": 0.03,
+      "mape": 3.4115114885490683,
+      "gain_vs_gru": 0.030207388977137484
+    },
+    {
+      "segment": "momentum_raw_bin",
+      "groups": 5,
+      "shrink_k": 100,
+      "beta": 0.75,
+      "clip": 0.02,
+      "mape": 3.4115114885490683,
+      "gain_vs_gru": 0.030207388977137484
+    }
+  ]
+}

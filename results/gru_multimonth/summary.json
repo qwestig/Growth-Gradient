@@ -1,0 +1,101 @@
+{
+  "target_periods": [
+    [
+      2024,
+      3
+    ],
+    [
+      2024,
+      4
+    ],
+    [
+      2024,
+      5
+    ],
+    [
+      2024,
+      6
+    ],
+    [
+      2024,
+      7
+    ],
+    [
+      2024,
+      8
+    ],
+    [
+      2024,
+      9
+    ],
+    [
+      2024,
+      10
+    ],
+    [
+      2024,
+      11
+    ],
+    [
+      2024,
+      12
+    ],
+    [
+      2025,
+      1
+    ],
+    [
+      2025,
+      2
+    ]
+  ],
+  "examples": 223884,
+  "best_march": {
+    "scope": "march2024_holdout",
+    "alpha": 0.5,
+    "mape": 3.779785479968906,
+    "base_mape": 4.128016715804195,
+    "valid_loss": 0.03137216344475746
+  },
+  "summary": [
+    {
+      "scope": "march2024_holdout",
+      "alpha": 0.5,
+      "mape": 3.779785479968906,
+      "base_mape": 4.128016715804195,
+      "valid_loss": 0.03137216344475746
+    },
+    {
+      "scope": "march2024_holdout",
+      "alpha": 0.6,
+      "mape": 3.7911633950684935,
+      "base_mape": 4.128016715804195,
+      "valid_loss": 0.03137216344475746
+    },
+    {
+      "scope": "march2024_holdout",
+      "alpha": 0.4,
+      "mape": 3.795845639351497,
+      "base_mape": 4.128016715804195,
+      "valid_loss": 0.03137216344475746
+    },
+    {
+      "scope": "march2024_holdout",
+      "alpha": 0.7,
+      "mape": 3.8276719027436505,
+      "base_mape": 4.128016715804195,
+      "valid_loss": 0.03137216344475746
+    },
+    {
+      "scope": "march2024_holdout",
+      "alpha": 0.3,
+      "mape": 3.8388554471307623,
+      "base_mape": 4.128016715804195,
+      "valid_loss": 0.03137216344475746
+    }
+  ],
+  "candidate_submissions": [
+    "/Users/levonkrtyan/Library/Mobile Documents/com~apple~CloudDocs/Growth Gradient/submissions/test_gru_multimonth_alpha070.csv",
+    "/Users/levonkrtyan/Library/Mobile Documents/com~apple~CloudDocs/Growth Gradient/submissions/test_gru_multimonth_alpha050.csv"
+  ]
+}

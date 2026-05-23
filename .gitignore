@@ -1,7 +1,7 @@
 .DS_Store
+.venv/
 .ipynb_checkpoints/
 **/.ipynb_checkpoints/
 analysis/.cache/
 analysis/.mplconfig/
 analysis/figures/test.png
-

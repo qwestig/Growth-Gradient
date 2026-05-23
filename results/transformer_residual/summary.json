@@ -1,0 +1,106 @@
+{
+  "seq_len": 14,
+  "best_transformer_alpha": 1.0,
+  "comparison": [
+    {
+      "model": "transformer",
+      "alpha": 1.0,
+      "blend": "",
+      "mape": 3.3058713836767213
+    },
+    {
+      "model": "transformer",
+      "alpha": 0.9,
+      "blend": "",
+      "mape": 3.3252926861789733
+    },
+    {
+      "model": "transformer",
+      "alpha": 0.8,
+      "blend": "",
+      "mape": 3.368978377935963
+    },
+    {
+      "model": "gru_transformer_blend",
+      "alpha": 0.7,
+      "blend": "transformer_weight_0.5",
+      "mape": 3.4229301689417935
+    },
+    {
+      "model": "gru_transformer_blend",
+      "alpha": 0.7,
+      "blend": "transformer_weight_0.4",
+      "mape": 3.424785376052894
+    },
+    {
+      "model": "transformer",
+      "alpha": 0.7,
+      "blend": "",
+      "mape": 3.426814469760268
+    },
+    {
+      "model": "gru_transformer_blend",
+      "alpha": 0.7,
+      "blend": "transformer_weight_0.3",
+      "mape": 3.4276878766654475
+    },
+    {
+      "model": "gru_transformer_blend",
+      "alpha": 0.7,
+      "blend": "transformer_weight_0.2",
+      "mape": 3.431490483318596
+    },
+    {
+      "model": "gru_transformer_blend",
+      "alpha": 0.7,
+      "blend": "transformer_weight_0.1",
+      "mape": 3.4361703262801866
+    },
+    {
+      "model": "gru_reference",
+      "alpha": 0.7,
+      "blend": "",
+      "mape": 3.4417188775262058
+    },
+    {
+      "model": "catboost_targeted_reference",
+      "alpha": 0.7,
+      "blend": "",
+      "mape": 3.471942824216448
+    },
+    {
+      "model": "transformer",
+      "alpha": 0.6,
+      "blend": "",
+      "mape": 3.497561977247575
+    },
+    {
+      "model": "transformer",
+      "alpha": 0.5,
+      "blend": "",
+      "mape": 3.5794781506513123
+    },
+    {
+      "model": "transformer",
+      "alpha": 0.4,
+      "blend": "",
+      "mape": 3.671537161372624
+    },
+    {
+      "model": "transformer",
+      "alpha": 0.3,
+      "blend": "",
+      "mape": 3.772769162320797
+    },
+    {
+      "model": "transformer",
+      "alpha": 0.2,
+      "blend": "",
+      "mape": 3.88268449363594
+    }
+  ],
+  "candidate_submissions": [
+    "/Users/levonkrtyan/Library/Mobile Documents/com~apple~CloudDocs/Growth Gradient/submissions/test_transformer_alpha070.csv",
+    "/Users/levonkrtyan/Library/Mobile Documents/com~apple~CloudDocs/Growth Gradient/submissions/test_transformer_alpha100.csv"
+  ]
+}

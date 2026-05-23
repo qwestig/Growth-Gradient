@@ -1,0 +1,100 @@
+{
+  "best": {
+    "kernel_size": 7.0,
+    "alpha": 0.7,
+    "mape": 3.477920960073566
+  },
+  "summary": [
+    {
+      "kernel_size": 7,
+      "alpha": 0.7,
+      "mape": 3.477920960073566
+    },
+    {
+      "kernel_size": 5,
+      "alpha": 0.7,
+      "mape": 3.4828927541448693
+    },
+    {
+      "kernel_size": 3,
+      "alpha": 0.7,
+      "mape": 3.4888676771241696
+    },
+    {
+      "kernel_size": 7,
+      "alpha": 0.6,
+      "mape": 3.5432789729006617
+    },
+    {
+      "kernel_size": 5,
+      "alpha": 0.6,
+      "mape": 3.548516039036228
+    },
+    {
+      "kernel_size": 3,
+      "alpha": 0.6,
+      "mape": 3.5540872526403047
+    },
+    {
+      "kernel_size": 7,
+      "alpha": 0.5,
+      "mape": 3.6186944940559527
+    },
+    {
+      "kernel_size": 5,
+      "alpha": 0.5,
+      "mape": 3.623488796973282
+    },
+    {
+      "kernel_size": 3,
+      "alpha": 0.5,
+      "mape": 3.6282686404081823
+    },
+    {
+      "kernel_size": 7,
+      "alpha": 0.4,
+      "mape": 3.704076531183636
+    },
+    {
+      "kernel_size": 5,
+      "alpha": 0.4,
+      "mape": 3.7077466572710915
+    },
+    {
+      "kernel_size": 3,
+      "alpha": 0.4,
+      "mape": 3.712441946383675
+    },
+    {
+      "kernel_size": 7,
+      "alpha": 0.3,
+      "mape": 3.7977117296199743
+    },
+    {
+      "kernel_size": 5,
+      "alpha": 0.3,
+      "mape": 3.8007104635182176
+    },
+    {
+      "kernel_size": 3,
+      "alpha": 0.3,
+      "mape": 3.8048449005472036
+    },
+    {
+      "kernel_size": 7,
+      "alpha": 0.2,
+      "mape": 3.899477950296567
+    },
+    {
+      "kernel_size": 5,
+      "alpha": 0.2,
+      "mape": 3.901598216892569
+    },
+    {
+      "kernel_size": 3,
+      "alpha": 0.2,
+      "mape": 3.905011227346395
+    }
+  ],
+  "submission": "/Users/levonkrtyan/Library/Mobile Documents/com~apple~CloudDocs/Growth Gradient/submissions/test_dlinear_k7_alpha070.csv"
+}
