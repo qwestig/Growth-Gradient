@@ -1,0 +1,16 @@
+{
+  "seq_len": 14,
+  "epochs": 80,
+  "final_epochs": 35,
+  "base_spec": {
+    "candidate_id": 0,
+    "name": "cal050_mom000",
+    "calendar_lambda": 0.5,
+    "factor_method": "median",
+    "momentum_exp": 0.0,
+    "rebound_lift": 0.0,
+    "structural_cut": 0.0,
+    "group_col": null,
+    "group_shrink_k": 2000.0
+  }
+}
