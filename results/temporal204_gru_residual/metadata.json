@@ -1,0 +1,18 @@
+{
+  "seq_len": 14,
+  "epochs": 80,
+  "final_epochs": 35,
+  "base": "candidate_204 temporal2_raw_clip085_135_a012_lc006",
+  "base_spec": {
+    "candidate_id": 0,
+    "name": "temporal204",
+    "calendar_lambda": 0.55,
+    "factor_method": "median",
+    "momentum_exp": 0.0,
+    "rebound_lift": 0.0,
+    "structural_cut": 0.0,
+    "group_col": null,
+    "group_shrink_k": 2000.0
+  },
+  "device": "cuda"
+}
