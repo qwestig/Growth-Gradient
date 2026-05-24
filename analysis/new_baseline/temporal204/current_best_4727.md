@@ -8,6 +8,15 @@ Current best submission:
 submissions/test_best_temporal204_gru_second_9076.csv
 ```
 
+Submitted milestone files kept in the repo:
+
+```text
+submissions/test_best_temporal204_pure_9012.csv       # candidate 204, pure baseline, MAPE 5.068
+submissions/test_best_temporal204_gru_9072.csv        # candidate 210, one-layer fresh GRU, MAPE 4.748
+submissions/test_best_temporal204_gru_blend_9075.csv  # candidate 215, one-layer GRU + transfer blend, MAPE 4.732
+submissions/test_best_temporal204_gru_second_9076.csv # candidate 220, second residual layer, MAPE 4.727
+```
+
 Equivalent source file outside the repo:
 
 ```text
