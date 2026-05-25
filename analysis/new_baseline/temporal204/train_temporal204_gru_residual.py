@@ -1,12 +1,16 @@
 from __future__ import annotations
 
 import json
+import sys
+from pathlib import Path
 
 import numpy as np
 import pandas as pd
 import torch
 from torch import nn
 from torch.utils.data import DataLoader, TensorDataset
+
+sys.path.append(str(Path(__file__).resolve().parents[1]))
 
 from heuristic_baseline_direction_lab import (
     RESULTS_DIR,

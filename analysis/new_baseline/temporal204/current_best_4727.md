@@ -17,6 +17,17 @@ submissions/test_best_temporal204_gru_blend_9075.csv  # candidate 215, one-layer
 submissions/test_best_temporal204_gru_second_9076.csv # candidate 220, second residual layer, MAPE 4.727
 ```
 
+Compatibility aliases with the original experiment filenames are also committed because the repro scripts read these names:
+
+```text
+submissions/stage2_candidate_118_baseline_cal050_mombin_g100.csv
+submissions/stage2_candidate_159_baseline_faithful_global_blend_75_25_transfer.csv
+submissions/stage2_candidate_198_baseline_v4_followup_signasym_lam0550_wp02_wn14_cp002_cn003.csv
+submissions/stage2_candidate_204_baseline_v6_temporal2_raw_clip085_135_a012_lc006.csv
+submissions/stage2_candidate_210_baseline_temporal204_newgru_global_a100.csv
+submissions/stage2_candidate_215_baseline_temporal204_newgru_global_a100_blend75_transfer118.csv
+```
+
 Equivalent source file outside the repo:
 
 ```text

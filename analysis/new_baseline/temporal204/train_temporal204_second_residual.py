@@ -1,8 +1,13 @@
 from __future__ import annotations
 
+import sys
+from pathlib import Path
+
 import numpy as np
 import pandas as pd
 from catboost import CatBoostRegressor, Pool
+
+sys.path.append(str(Path(__file__).resolve().parents[1]))
 
 from heuristic_baseline_direction_lab import RESULTS_DIR, STATIC_CAT_COLS, STATIC_NUM_COLS, SUBMISSIONS_DIR, TARGET, mape
 from train_temporal204_gru_residual import prepare_data
