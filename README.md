@@ -1,87 +1,73 @@
 # Growth Gradient
 
-Рабочий репозиторий для задачи прогнозирования РТО магазинов сети Пятерочка на март 2025.
+Финальная ветка с выбранным воспроизводимым решением для прогноза РТО магазинов на март 2025.
 
-Эта ветка хранит не только финальные кандидаты, но и исследовательские артефакты: скрипты, summary-таблицы, OOF/test predictions и submission CSV. Это сделано для того, чтобы можно было выбрать лучшую модель по локальным метрикам, public leaderboard и воспроизводимости.
+Полный исследовательский слепок со всеми старыми переборами, промежуточными CSV, OOF/test-prediction таблицами и скриптами сохранен в отдельной ветке:
 
-## Текущий якорь сравнения
-
-- Current public best visible score: `90.78`.
-- Current public MAPE anchor: `4.7214609684`.
-- Current local `pred265` OOF MAPE anchor: `3.314574`.
-- Текущий public-anchor: candidate `265`, он же `pred265` / temporal204 v11 GRU stack.
-
-Новые или старые кандидаты удобно сравнивать с `pred265`, потому что более ранние clean baseline заметно слабее.
-
-## Быстрая навигация
-
-Главная точка входа для анализа моделей:
-
-- `analysis/model_registry/README.md` - как устроен реестр моделей.
-- `analysis/model_registry/MODEL_FAMILY_NOTES.md` - краткая интерпретация семейств моделей.
-- `analysis/model_registry/REPRODUCIBILITY_TODO.md` - что нужно дозаполнить после выбора финального решения.
-- `results/model_registry/family_registry.csv` - один ряд на семейство моделей.
-- `results/model_registry/candidate_registry.csv` - нормализованный индекс кандидатных строк из summary-файлов.
-- `results/model_registry/public_score_log.csv` - известные public-score результаты.
-- `results/model_registry/registry_snapshot.md` - быстрый markdown-снимок лучших локальных строк.
-
-Обновление реестра после добавления новых summary:
-
-```bash
-python3 analysis/model_registry/build_model_registry.py
+```text
+codex/best-9078-candidate-317-full-archive
 ```
 
-Если появляется новый public score, он вручную добавляется в `PUBLIC_SCORE_LOG` внутри `analysis/model_registry/build_model_registry.py`, после чего реестр пересобирается той же командой.
+В этой ветке оставлены только файлы, которые нужны для воспроизведения финального решения, проверки формата, защиты и краткого анализа.
 
-## Структура репозитория
+## Финальное Решение
 
-- `train_2.csv` - исходные обучающие данные.
-- `notebooks/` - исследовательские ноутбуки.
-- `analysis/new_baseline/` - baseline и ML-эксперименты ранней/средней фазы.
-- `analysis/new_strategy/` - поздние альтернативные эвристики, residual-модели и overlay-кандидаты.
-- `analysis/model_registry/` - документация и скрипт сборки реестра экспериментов.
-- `results/` - summary, diagnostics, OOF predictions, test predictions, model registry.
-- `submissions/` - generated candidate CSV. Обычно есть полное имя вида `stage2_candidate_<id>_<description>.csv`; для части отправленных кандидатов есть короткие alias-файлы вроде `472.csv`.
+Выбранный вариант:
 
-## Известные public результаты
+- candidate: `317`
+- public score: `90.78`
+- local OOF MAPE: `3.274858`
+- family: `v15_meta_residual_on_265`
+- base anchor: `pred265`
+- residual model: `huber030`
+- gamma: `0.80`
+- clip: `0.008`
+- seed: `2026`
 
-Полный журнал лежит в `results/model_registry/public_score_log.csv`.
+Финальные CSV:
 
-Ключевые точки:
+- `submissions/test.csv`
+- `selected_solution/submission_candidate_317.csv`
+- `submissions/stage2_candidate_317_v15_meta265_huber030_g0p80_c0p008.csv`
 
-- `265`: `90.78`, текущий anchor.
-- `390`: `90.59`, aggressive feb-anomaly GRU, хуже anchor.
-- `398`: `90.45`, safe feb-anomaly GRU, хуже anchor.
-- `430`: `90.58`, uncapped feb-anomaly GRU, хуже anchor.
-- `467`: `90.78`, micro overlay on 265, public-neutral.
-- `472`: `90.78`, stronger micro overlay on 265, public-neutral.
+Эти файлы синхронизированы как финальные варианты candidate 317.
 
-## Текущая картина по семействам
+## Воспроизведение
 
-По `results/model_registry/family_registry.csv` лучшие локальные семейства сейчас:
+Главная точка входа:
 
-1. `micro_overlays_on_265` - лучший local OOF, но public-neutral на `467` и `472`.
-2. `multimonth_gru_seasonal` - сильное локальное ML-семейство.
-3. `multimonth_gru` - более простой GRU residual вариант.
-4. `similarity_overlays_on_265` - маленький независимый KNN-similarity signal.
-5. `anchor_temporal204_v11_gru_stack` - текущий public-anchor.
+```text
+notebooks/final_reproducible_solution.ipynb
+```
 
-Отдельно сохранены проигрышные, но важные для анализа и защиты семейства: `shrunk_yoy`, `share_of_market`, `march_share_q1`, `deseasonalized_normal`, `lifecycle`, `hierarchical_cohort_expert`, `conditional_feb_anomaly`.
+Notebook самодостаточный: код вспомогательных этапов встроен внутрь, без импортов локальных project-модулей и без fallback на старые snapshot inputs или `git show`.
 
-## Как читать артефакты
+При последовательном запуске notebook:
 
-`candidate_registry.csv` является индексом, а не единой абсолютной leaderboard-таблицей. Причина: разные старые эксперименты могли использовать разные локальные протоколы (`clean heuristic validation`, `March-2024 OOF`, proxy MAPE, gated OOF).
+1. выводит версии Python-библиотек;
+2. фиксирует `RANDOM_SEED = 2026`;
+3. строит промежуточные признаки и meta-inputs из входных данных;
+4. обучает финальный residual-этап;
+5. формирует `test.csv` и зеркало `submissions/test.csv`;
+6. проверяет формат submission.
 
-Для выбора финального решения стоит сначала собрать shortlist, затем сравнить выбранные модели на одном согласованном локальном протоколе и только после этого фиксировать финальный CSV и воспроизводимость.
+Для локального запуска на текущих данных нужен файл:
 
-## Воспроизводимость финального решения
+```text
+train_2.csv
+```
 
-После выбора финального кандидата нужно заполнить `analysis/model_registry/REPRODUCIBILITY_TODO.md`:
+Если организаторы подставляют закрытые входные данные в том же формате, notebook должен строить новый `test.csv` из этих данных без обращения к сохраненным промежуточным CSV.
 
-- final candidate id и путь к CSV;
-- точная команда запуска;
-- Python и версии библиотек;
-- seed/fold/training параметры;
-- входные файлы и ожидаемые размеры/хэши;
-- выходные файлы;
-- проверка формата submission.
+## Структура
+
+- `notebooks/` - финальный reproducible notebook.
+- `selected_solution/` - manifest, версии библиотек и финальный выбранный CSV.
+- `submissions/` - только финальный `test.csv` и полное имя candidate 317.
+- `results/new_baseline/` - компактные summary финального v15-этапа.
+- `results/model_registry/` - компактный журнал public/local результатов.
+- `analysis/` - EDA-отчет и графики для защиты.
+
+## Что Убрано
+
+Из текущей ветки удалены старые исследовательские скрипты, сотни candidate CSV, snapshot inputs, OOF/test-prediction таблицы и промежуточные результаты переборов. Они не потеряны: все это осталось в archive-ветке `codex/best-9078-candidate-317-full-archive`.

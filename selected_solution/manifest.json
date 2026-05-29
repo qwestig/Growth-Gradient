@@ -19,20 +19,22 @@
   "clip": 0.008,
   "candidate_file": "stage2_candidate_317_v15_meta265_huber030_g0p80_c0p008.csv",
   "selected_submission_file": "selected_solution/submission_candidate_317.csv",
-  "primary_script": "analysis/new_baseline/train_v15_meta_residual_on_265.py",
-  "reproduction_notebook": "notebooks/reproduce_candidate_317.ipynb",
+  "primary_notebook": "notebooks/final_reproducible_solution.ipynb",
   "random_seed": 2026,
-  "input_snapshots": [
-    "selected_solution/inputs/oof_meta_inputs_v11_v14.csv.gz",
-    "selected_solution/inputs/test_meta_inputs_v11_v14.csv.gz"
+  "input_data": "train_2.csv",
+  "generated_submission_files": [
+    "test.csv",
+    "submissions/test.csv",
+    "submissions/stage2_candidate_317_v15_meta265_huber030_g0p80_c0p008.csv"
   ],
-  "reproduced_submission_file": "selected_solution/reproduced_submission_candidate_317.csv",
+  "archive_branch": "codex/best-9078-candidate-317-full-archive",
   "summary_files": [
     "selected_solution/reproduction_package_versions.csv",
     "results/new_baseline/v15_meta265_search_summary.csv",
     "results/new_baseline/v15_meta265_submission_candidates.csv",
-    "results/model_registry/candidate_registry.csv",
-    "results/model_registry/family_registry.csv"
+    "results/model_registry/family_registry.csv",
+    "results/model_registry/public_score_log.csv",
+    "results/model_registry/registry_snapshot.md"
   ],
   "known_public_9078_local_ranking": [
     {
