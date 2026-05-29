@@ -43,13 +43,13 @@ def read_remote_csv(path: str) -> pd.DataFrame:
 
 
 def read_input_csv(path: str) -> pd.DataFrame:
-    snapshot_path = INPUT_SNAPSHOT_DIR / f"{Path(path).name}.gz"
-    if snapshot_path.exists():
-        return pd.read_csv(snapshot_path)
-
     local_path = ROOT / path
     if local_path.exists():
         return pd.read_csv(local_path)
+
+    snapshot_path = INPUT_SNAPSHOT_DIR / f"{Path(path).name}.gz"
+    if snapshot_path.exists():
+        return pd.read_csv(snapshot_path)
 
     return read_remote_csv(path)
 

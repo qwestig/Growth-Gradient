@@ -24,6 +24,9 @@ MOMENTUM_TRAIN_BINS = [-np.inf, 0.935766244455909, 0.9524077370639855, 0.9656151
 
 
 def read_remote_csv(path: str) -> pd.DataFrame:
+    local_path = RESULTS_DIR.parents[0] / path
+    if local_path.exists():
+        return pd.read_csv(local_path)
     result = subprocess.run(
         ["git", "show", f"{REMOTE_BRANCH}:{path}"],
         cwd=RESULTS_DIR.parents[0],
