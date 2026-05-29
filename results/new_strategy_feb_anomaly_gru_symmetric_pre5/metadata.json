@@ -1,0 +1,21 @@
+{
+  "base": {
+    "name": "feb_anom_pre5_median_symmetric_t0p035_w0p15_cal0p55",
+    "normal_method": "pre5_median",
+    "trigger_mode": "symmetric",
+    "threshold": 0.035,
+    "correction_weight": 0.15,
+    "factor_lambda": 0.55,
+    "factor_method": "median",
+    "max_level_ratio": 999.0
+  },
+  "seq_len": 14,
+  "epochs": 80,
+  "final_epochs": 35,
+  "seeds": [
+    2026,
+    2043
+  ],
+  "device": "cpu",
+  "target": "log(actual / capped conditional February anomaly baseline)"
+}

@@ -1,0 +1,4 @@
+reference,oof_mape,delta_vs_265_oof
+pred265_oof,3.314574426593587,0.0
+seasonal_multimonth_gru_best,3.3087372368734167,-0.0058371897201703
+ml_gate_candidate_best,3.305798031007709,-0.0087763955858779

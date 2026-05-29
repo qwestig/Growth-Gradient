@@ -1,0 +1,11 @@
+candidate_id,public_score,public_mape,note
+204,89.65,,Reported best pre-90 heuristic/stack attempt.
+235,90.73,,Reported regression from later 90.77/90.78 line.
+265,90.78,4.7214609684,Current public anchor: temporal204 v11 / safer GRU stack.
+317,90.78,,Reported same visible score as current best.
+319,90.78,,Reported same visible score as current best.
+390,90.59,,Aggressive feb-anomaly GRU residual; public worse than anchor.
+398,90.45,,Safe feb-anomaly GRU residual; public worse than anchor.
+430,90.58,,Uncapped feb-anomaly GRU residual; public worse than anchor.
+467,90.78,,Micro overlay on 265; same visible public score.
+472,90.78,,Stronger micro overlay on 265; same visible public score.

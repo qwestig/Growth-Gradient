@@ -1,0 +1,16 @@
+{
+  "current_public_anchor": {
+    "score": 90.78,
+    "mape": 4.7214609684
+  },
+  "seq_len": 14,
+  "epochs": 10,
+  "final_epochs": 6,
+  "seeds": [
+    2026,
+    2043
+  ],
+  "device": "cpu",
+  "train_target_periods": "2024-03..2025-02",
+  "target": "next-month log growth; candidates are clipped blends from pred265 toward raw multimonth GRU"
+}
