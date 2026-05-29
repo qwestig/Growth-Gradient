@@ -8,6 +8,7 @@ Anchor local pred265 OOF MAPE: 3.314574
 
 | family_id | verdict | best_local_mape | best_local_delta | best_local_candidate |
 |---|---:|---:|---:|---|
+| v15_meta_residual_on_265 | best_known_public_9078_local_mape | 3.270457 | -0.044118 | huber030_g1.00_c0.012 |
 | micro_overlays_on_265 | public_neutral | 3.299217 | -0.015357 | v14_284_plus_feb410_a020_c008 |
 | multimonth_gru_seasonal | tested_but_not_final_anchor | 3.304390 | -0.010184 | none_a0.25_c0.020_reg_cov0.65 |
 | multimonth_gru | tested_but_not_final_anchor | 3.308853 | -0.005722 | q0.40_a0.30_c0.003 |
@@ -32,28 +33,28 @@ Anchor local pred265 OOF MAPE: 3.314574
 
 | rank | family_id | candidate_id | local_mape | local_delta | public_score | file/candidate |
 |---:|---|---:|---:|---:|---:|---|
-| 1 | micro_overlays_on_265 | 472 | 3.299217 | -0.015357 | 90.78 | stage2_candidate_472_micro265_v14_284_plus_feb410_a020_c008.csv |
-| 2 | micro_overlays_on_265 | 474 | 3.299274 | -0.015300 |  | stage2_candidate_474_micro265_v14_285_plus_feb410_a020_c008.csv |
-| 3 | micro_overlays_on_265 | 473 | 3.299985 | -0.014590 |  | stage2_candidate_473_micro265_v14_284_plus_feb410_a020_c005.csv |
-| 4 | micro_overlays_on_265 | 475 | 3.299989 | -0.014585 |  | stage2_candidate_475_micro265_v14_284_plus_feb430_a020_c008.csv |
-| 5 | micro_overlays_on_265 | 467 | 3.304258 | -0.010316 | 90.78 | stage2_candidate_467_micro265_v14_284_plus_feb410_a010_c005.csv |
-| 6 | micro_overlays_on_265 | 468 | 3.304361 | -0.010214 |  | stage2_candidate_468_micro265_v14_285_plus_feb410_a010_c005.csv |
-| 7 | multimonth_gru_seasonal |  | 3.304390 | -0.010184 |  | none_a0.25_c0.020_reg_cov0.65 |
-| 8 | micro_overlays_on_265 | 471 | 3.304502 | -0.010073 |  | stage2_candidate_471_micro265_v14_284_plus_feb450_a010_c005.csv |
-| 9 | micro_overlays_on_265 | 470 | 3.304598 | -0.009977 |  | stage2_candidate_470_micro265_v14_284_plus_feb430_a010_c005.csv |
-| 10 | multimonth_gru_seasonal |  | 3.304740 | -0.009834 |  | none_a0.25_c0.020_reg_cov0.80 |
-| 11 | micro_overlays_on_265 | 469 | 3.304785 | -0.009789 |  | stage2_candidate_469_micro265_v14_284_plus_feb410_a010_c003.csv |
-| 12 | multimonth_gru_seasonal |  | 3.305031 | -0.009543 |  | none_a0.25_c0.020_prob_cov0.80 |
-| 13 | multimonth_gru_seasonal |  | 3.305234 | -0.009340 |  | none_a0.25_c0.020_hybrid_cov0.80 |
-| 14 | multimonth_gru_seasonal |  | 3.305237 | -0.009338 |  | none_a0.25_c0.020_reg_cov0.50 |
-| 15 | multimonth_gru_seasonal |  | 3.305328 | -0.009247 |  | none_a0.25_c0.020_hybrid_cov0.65 |
-| 16 | multimonth_gru_seasonal |  | 3.305328 | -0.009246 |  | median_a0.25_c0.020_reg_cov0.65 |
-| 17 | multimonth_gru_seasonal |  | 3.305381 | -0.009193 |  | median_a0.25_c0.020_reg_cov0.80 |
-| 18 | multimonth_gru_seasonal |  | 3.305411 | -0.009164 |  | none_a0.25_c0.020_hybrid_cov0.35 |
-| 19 | multimonth_gru_seasonal |  | 3.305575 | -0.009000 |  | median_a0.20_c0.020_reg_cov0.80 |
-| 20 | multimonth_gru_seasonal |  | 3.305658 | -0.008917 |  | median_a0.25_c0.020_reg_cov0.50 |
-| 21 | multimonth_gru_seasonal |  | 3.305781 | -0.008793 |  | none_a0.25_c0.020_hybrid_cov0.50 |
-| 22 | multimonth_gru_seasonal |  | 3.305798 | -0.008776 |  | median_a0.20_c0.012_reg_cov0.65 |
-| 23 | multimonth_gru_seasonal |  | 3.305828 | -0.008747 |  | none_a0.25_c0.012_reg_cov0.80 |
-| 24 | multimonth_gru_seasonal |  | 3.305902 | -0.008672 |  | none_a0.20_c0.020_reg_cov0.50 |
-| 25 | multimonth_gru_seasonal |  | 3.305946 | -0.008628 |  | none_a0.25_c0.020_reg_cov0.35 |
+| 1 | v15_meta_residual_on_265 |  | 3.270457 | -0.044118 |  | huber030_g1.00_c0.012 |
+| 2 | v15_meta_residual_on_265 | 310 | 3.270457 | -0.044118 |  | stage2_candidate_310_v15_meta265_huber030_g1p00_c0p012.csv |
+| 3 | v15_meta_residual_on_265 |  | 3.270798 | -0.043776 |  | huber100_g1.00_c0.012 |
+| 4 | v15_meta_residual_on_265 | 311 | 3.270798 | -0.043776 |  | stage2_candidate_311_v15_meta265_huber100_g1p00_c0p012.csv |
+| 5 | v15_meta_residual_on_265 |  | 3.270942 | -0.043632 |  | huber010_g1.00_c0.012 |
+| 6 | v15_meta_residual_on_265 | 312 | 3.270942 | -0.043632 |  | stage2_candidate_312_v15_meta265_huber010_g1p00_c0p012.csv |
+| 7 | v15_meta_residual_on_265 |  | 3.271148 | -0.043426 |  | huber030_g0.80_c0.012 |
+| 8 | v15_meta_residual_on_265 | 313 | 3.271148 | -0.043426 |  | stage2_candidate_313_v15_meta265_huber030_g0p80_c0p012.csv |
+| 9 | v15_meta_residual_on_265 |  | 3.271412 | -0.043163 |  | huber010_g0.80_c0.012 |
+| 10 | v15_meta_residual_on_265 | 314 | 3.271412 | -0.043163 |  | stage2_candidate_314_v15_meta265_huber010_g0p80_c0p012.csv |
+| 11 | v15_meta_residual_on_265 |  | 3.271454 | -0.043121 |  | huber100_g0.80_c0.012 |
+| 12 | v15_meta_residual_on_265 | 315 | 3.271454 | -0.043121 |  | stage2_candidate_315_v15_meta265_huber100_g0p80_c0p012.csv |
+| 13 | v15_meta_residual_on_265 |  | 3.274564 | -0.040010 |  | huber030_g1.00_c0.008 |
+| 14 | v15_meta_residual_on_265 | 316 | 3.274564 | -0.040010 |  | stage2_candidate_316_v15_meta265_huber030_g1p00_c0p008.csv |
+| 15 | v15_meta_residual_on_265 | 317 | 3.274858 | -0.039716 | 90.78 | stage2_candidate_317_v15_meta265_huber030_g0p80_c0p008.csv |
+| 16 | v15_meta_residual_on_265 |  | 3.274858 | -0.039716 |  | huber030_g0.80_c0.008 |
+| 17 | v15_meta_residual_on_265 |  | 3.275021 | -0.039554 |  | huber010_g1.00_c0.008 |
+| 18 | v15_meta_residual_on_265 |  | 3.275067 | -0.039507 |  | huber100_g1.00_c0.008 |
+| 19 | v15_meta_residual_on_265 |  | 3.275149 | -0.039426 |  | huber010_g0.80_c0.008 |
+| 20 | v15_meta_residual_on_265 |  | 3.275177 | -0.039397 |  | huber100_g0.80_c0.008 |
+| 21 | v15_meta_residual_on_265 |  | 3.275593 | -0.038982 |  | huber030_g0.60_c0.012 |
+| 22 | v15_meta_residual_on_265 |  | 3.275659 | -0.038915 |  | huber010_g0.60_c0.012 |
+| 23 | v15_meta_residual_on_265 |  | 3.275816 | -0.038758 |  | huber100_g0.60_c0.012 |
+| 24 | v15_meta_residual_on_265 |  | 3.277827 | -0.036747 |  | huber030_g0.60_c0.008 |
+| 25 | v15_meta_residual_on_265 |  | 3.277918 | -0.036656 |  | huber010_g0.60_c0.008 |

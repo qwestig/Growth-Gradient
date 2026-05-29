@@ -1,0 +1,54 @@
+{
+  "selected_candidate_id": 317,
+  "selection_rule": "lowest known local OOF MAPE among candidates with confirmed visible public score 90.78",
+  "public_score": 90.78,
+  "public_mape": null,
+  "local_oof_mape": 3.274858073509391,
+  "delta_vs_pred265_oof": -0.039716353084195966,
+  "anchor_candidate_id": 265,
+  "anchor_public_score": 90.78,
+  "anchor_public_mape": 4.7214609684,
+  "anchor_local_oof_mape": 3.314574426593587,
+  "family_id": "v15_meta_residual_on_265",
+  "stage": "posthoc_meta_residual",
+  "base_anchor": "pred265",
+  "model_source": "huber030",
+  "gamma": 0.8,
+  "clip": 0.008,
+  "candidate_file": "stage2_candidate_317_v15_meta265_huber030_g0p80_c0p008.csv",
+  "selected_submission_file": "selected_solution/submission_candidate_317.csv",
+  "primary_script": "analysis/new_baseline/train_v15_meta_residual_on_265.py",
+  "summary_files": [
+    "results/new_baseline/v15_meta265_search_summary.csv",
+    "results/new_baseline/v15_meta265_submission_candidates.csv",
+    "results/model_registry/candidate_registry.csv",
+    "results/model_registry/family_registry.csv"
+  ],
+  "known_public_9078_local_ranking": [
+    {
+      "candidate_id": 317,
+      "local_oof_mape": 3.274858073509391,
+      "delta_vs_pred265_oof": -0.039716353084195966
+    },
+    {
+      "candidate_id": 319,
+      "local_oof_mape": 3.2828467019948944,
+      "delta_vs_pred265_oof": -0.031727724598692664
+    },
+    {
+      "candidate_id": 472,
+      "local_oof_mape": 3.299217,
+      "delta_vs_pred265_oof": -0.015357
+    },
+    {
+      "candidate_id": 467,
+      "local_oof_mape": 3.304258,
+      "delta_vs_pred265_oof": -0.010316
+    },
+    {
+      "candidate_id": 265,
+      "local_oof_mape": 3.314574426593587,
+      "delta_vs_pred265_oof": 0.0
+    }
+  ]
+}

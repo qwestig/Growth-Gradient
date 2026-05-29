@@ -84,6 +84,18 @@ FAMILIES = [
         "notes": "Main anchor for all later comparisons. Public score 90.78, public MAPE 4.7214609684, local pred265 OOF MAPE 3.314574.",
     },
     {
+        "family_id": "v15_meta_residual_on_265",
+        "stage": "posthoc_meta_residual",
+        "approach": "Huber/Ridge meta residual overlay on pred265 using temporal204 meta inputs",
+        "training": "Huber/Ridge residual",
+        "primary_script": "analysis/new_baseline/train_v15_meta_residual_on_265.py",
+        "result_dir": "results/new_baseline",
+        "summary_files": "results/new_baseline/v15_meta265_search_summary.csv;results/new_baseline/v15_meta265_submission_candidates.csv",
+        "public_candidate_ids": "317,319",
+        "verdict": "best_known_public_9078_local_mape",
+        "notes": "Candidate 317 tied visible public score 90.78 and has the best known local OOF MAPE among indexed 90.78-score submissions: 3.274858. Candidate 319 also tied public 90.78 with local OOF MAPE 3.282847.",
+    },
+    {
         "family_id": "legacy_stage2_stack_201_211",
         "stage": "legacy_heuristic_stack",
         "approach": "Coefficient/stack search before the current temporal204 solution",
