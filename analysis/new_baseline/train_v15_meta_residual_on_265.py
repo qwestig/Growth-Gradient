@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+import os
+import random
 import subprocess
 from io import StringIO
 from pathlib import Path
@@ -18,7 +20,15 @@ ROOT = Path(__file__).resolve().parents[2]
 RESULTS_DIR = ROOT / "results" / "new_baseline"
 SUBMISSIONS_DIR = ROOT / "submissions"
 REMOTE_BRANCH = "origin/codex-new-baseline-gru-4763"
+INPUT_SNAPSHOT_DIR = ROOT / "selected_solution" / "inputs"
 TARGET = "target_rto"
+RANDOM_SEED = 2026
+
+
+def set_random_seed(seed: int = RANDOM_SEED) -> None:
+    os.environ["PYTHONHASHSEED"] = str(seed)
+    random.seed(seed)
+    np.random.seed(seed)
 
 
 def read_remote_csv(path: str) -> pd.DataFrame:
@@ -30,6 +40,18 @@ def read_remote_csv(path: str) -> pd.DataFrame:
         capture_output=True,
     )
     return pd.read_csv(StringIO(result.stdout))
+
+
+def read_input_csv(path: str) -> pd.DataFrame:
+    snapshot_path = INPUT_SNAPSHOT_DIR / f"{Path(path).name}.gz"
+    if snapshot_path.exists():
+        return pd.read_csv(snapshot_path)
+
+    local_path = ROOT / path
+    if local_path.exists():
+        return pd.read_csv(local_path)
+
+    return read_remote_csv(path)
 
 
 def mape(y_true: np.ndarray, y_pred: np.ndarray) -> float:
@@ -253,11 +275,12 @@ def write_candidates(test: pd.DataFrame, summary: pd.DataFrame, test_predictions
 
 
 def main() -> None:
+    set_random_seed()
     RESULTS_DIR.mkdir(parents=True, exist_ok=True)
     SUBMISSIONS_DIR.mkdir(parents=True, exist_ok=True)
 
-    train = read_remote_csv("results/temporal204_meta_inputs/oof_meta_inputs_v11_v14.csv")
-    test = read_remote_csv("results/temporal204_meta_inputs/test_meta_inputs_v11_v14.csv")
+    train = read_input_csv("results/temporal204_meta_inputs/oof_meta_inputs_v11_v14.csv")
+    test = read_input_csv("results/temporal204_meta_inputs/test_meta_inputs_v11_v14.csv")
     train = add_meta_ratios(train)
     test = add_meta_ratios(test)
     numeric, cats = feature_columns(train)

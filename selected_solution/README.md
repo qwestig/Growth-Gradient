@@ -34,6 +34,20 @@
 
 ## Как воспроизвести
 
+Рекомендуемый способ для проверки организаторами:
+
+```bash
+jupyter notebook notebooks/reproduce_candidate_317.ipynb
+```
+
+При последовательном выполнении всех ячеек notebook:
+
+- выводит версии Python-библиотек и полный `pip freeze`;
+- фиксирует `RANDOM_SEED = 2026`;
+- обучает нужный `huber030` residual expert;
+- формирует `selected_solution/reproduced_submission_candidate_317.csv`;
+- проверяет byte-to-byte совпадение с `selected_solution/submission_candidate_317.csv`.
+
 Основной скрипт:
 
 ```bash
@@ -42,6 +56,9 @@ python3 analysis/new_baseline/train_v15_meta_residual_on_265.py
 
 Ключевые summary-файлы:
 
+- `notebooks/reproduce_candidate_317.ipynb`
+- `selected_solution/inputs/oof_meta_inputs_v11_v14.csv.gz`
+- `selected_solution/inputs/test_meta_inputs_v11_v14.csv.gz`
 - `results/new_baseline/v15_meta265_search_summary.csv`
 - `results/new_baseline/v15_meta265_submission_candidates.csv`
 - `results/model_registry/candidate_registry.csv`

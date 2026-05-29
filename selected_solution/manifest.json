@@ -18,7 +18,15 @@
   "candidate_file": "stage2_candidate_317_v15_meta265_huber030_g0p80_c0p008.csv",
   "selected_submission_file": "selected_solution/submission_candidate_317.csv",
   "primary_script": "analysis/new_baseline/train_v15_meta_residual_on_265.py",
+  "reproduction_notebook": "notebooks/reproduce_candidate_317.ipynb",
+  "random_seed": 2026,
+  "input_snapshots": [
+    "selected_solution/inputs/oof_meta_inputs_v11_v14.csv.gz",
+    "selected_solution/inputs/test_meta_inputs_v11_v14.csv.gz"
+  ],
+  "reproduced_submission_file": "selected_solution/reproduced_submission_candidate_317.csv",
   "summary_files": [
+    "selected_solution/reproduction_package_versions.csv",
     "results/new_baseline/v15_meta265_search_summary.csv",
     "results/new_baseline/v15_meta265_submission_candidates.csv",
     "results/model_registry/candidate_registry.csv",
